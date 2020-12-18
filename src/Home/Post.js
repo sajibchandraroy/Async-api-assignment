@@ -6,7 +6,7 @@ const Post = ({data}) => {
     console.log(data);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/data`, {
+        fetch(`https://safe-sierra-49597.herokuapp.com/data`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json; charset=UTF-8' }

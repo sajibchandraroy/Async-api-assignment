@@ -6,7 +6,7 @@ const Home = () => {
     useEffect(() => {       
         setInterval(fetchDatabase, 15000); 
         async function fetchDatabase() {
-            const dataLoad = fetch('http://localhost:5000/data')
+            const dataLoad = fetch('https://safe-sierra-49597.herokuapp.com/data')
                 .then(res => res.json())
                 .then(data => setData(data[(data.length-1)]))
                 console.log(data)
