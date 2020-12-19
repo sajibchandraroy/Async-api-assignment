@@ -17,7 +17,7 @@ const Post = ({data}) => {
 
     return (
        <div>
-           <Home />
+           
        </div>
     );
 };
